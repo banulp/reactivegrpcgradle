@@ -1,0 +1,23 @@
+
+server:
+#  port: 8443
+  port: 8080
+#  ssl:
+#    enabled: true # Uses self-signed certificate because no key-store configuration is specified.
+#
+## Additional server ports specified with Armeria configuration.
+#armeria:
+#  ports:
+#  - port: 8443    # Port 8443 will serve HTTPS, HTTP and PROXY protocol.
+#    protocols:
+#    - http
+#    - proxy
+#  - port: 8080    # Port 8080 will serve only HTTP.
+#    protocols: http
+
+spring:
+  profiles:
+    active: local
+  data:
+    mongodb:
+      uri: mongodb://172.19.138.82:62222,172.19.151.169:62222,172.19.152.225:62222/webfluxgrpctest
