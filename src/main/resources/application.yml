@@ -20,4 +20,4 @@ spring:
     active: local
   data:
     mongodb:
-      uri: mongodb://172.19.138.82:62222,172.19.151.169:62222,172.19.152.225:62222/webfluxgrpctest
+      uri: mongodb:///webfluxgrpctest
